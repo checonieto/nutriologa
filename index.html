@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Neyra Espinoza | Nutrióloga — Nutrición personalizada</title>
+<meta name="description" content="Nutrióloga Neyra Espinoza: planes de alimentación personalizados, control de peso, nutrición deportiva, infantil y más. Consultas presenciales y en línea. Agenda por WhatsApp.">
+<meta property="og:title" content="Neyra Espinoza | Nutrióloga">
+<meta property="og:description" content="Nutrición personalizada para ayudarte a sentirte mejor y alcanzar tus objetivos.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="nutri.jpg">
+<meta name="theme-color" content="#1E4A38">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Neyra Espinoza — Nutrióloga",
+  "description": "Consulta nutricional personalizada, planes de alimentación, control de peso, nutrición deportiva, infantil y para diabetes.",
+  "telephone": "+524631023846",
+  "image": "nutri.jpg",
+  "areaServed": "MX"
+}
+</script>
+
+<style>
+  :root {
+    --hoja: #1E4A38;
+    --hoja-oscura: #12301F;
+    --menta: #E6EFE1;
+    --papel: #FAFBF7;
+    --mango: #F0A030;
+    --mango-suave: #FBE3B8;
+    --tinta: #14261E;
+    --tinta-suave: #4A5C53;
+    --linea: #CFDCCB;
+    --radio: 14px;
+    --ancho: 1120px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--tinta);
+    background: var(--papel);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  h1, h2, h3 {
+    font-family: "Bricolage Grotesque", "Figtree", system-ui, sans-serif;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0 0 .5em;
+    color: var(--hoja-oscura);
+  }
+  h1 { font-size: clamp(2.3rem, 5.4vw, 4rem); font-weight: 800; }
+  h2 { font-size: clamp(1.8rem, 3.6vw, 2.6rem); font-weight: 700; }
+  h3 { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.01em; }
+  p { margin: 0 0 1em; max-width: 62ch; }
+  a { color: inherit; }
+  img { max-width: 100%; display: block; }
+  .wrap { width: min(var(--ancho), 100% - 2.5rem); margin-inline: auto; }
+  .seccion { padding-block: clamp(3.5rem, 8vw, 6.5rem); }
+  .seccion.menta { background: var(--menta); }
+  .intro { max-width: 60ch; margin-bottom: 2.5rem; }
+  .intro p { color: var(--tinta-suave); }
+
+  :focus-visible { outline: 3px solid var(--mango); outline-offset: 3px; border-radius: 6px; }
+  .skip { position: absolute; left: -999px; top: 0; background: var(--hoja); color: #fff; padding: .75rem 1rem; z-index: 100; }
+  .skip:focus { left: 1rem; top: 1rem; }
+
+  /* Botones */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: .6rem;
+    font: 600 1rem/1 "Figtree", sans-serif;
+    padding: 1rem 1.5rem; border-radius: 999px; border: 2px solid transparent;
+    text-decoration: none; cursor: pointer; min-height: 52px;
+    transition: transform .15s ease, background-color .15s ease, color .15s ease;
+  }
+  .btn:active { transform: scale(.98); }
+  .btn svg { width: 20px; height: 20px; flex: none; }
+  .btn-mango { background: var(--mango); color: var(--hoja-oscura); }
+  .btn-mango:hover { background: #F5B14F; }
+  .btn-hoja { background: var(--hoja); color: #fff; }
+  .btn-hoja:hover { background: var(--hoja-oscura); }
+  .btn-borde { border-color: var(--hoja); color: var(--hoja); background: transparent; }
+  .btn-borde:hover { background: var(--hoja); color: #fff; }
+
+  /* Encabezado */
+  header.top {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(250, 251, 247, .94);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--linea);
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 68px; }
+  .marca { font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; font-size: 1.2rem; text-decoration: none; color: var(--hoja-oscura); letter-spacing: -0.02em; line-height: 1.1; }
+  .marca small { display: block; font-family: "Figtree", sans-serif; font-weight: 500; font-size: .8rem; color: var(--tinta-suave); letter-spacing: 0; }
+  nav ul { display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0; }
+  nav a { text-decoration: none; font-weight: 500; font-size: .98rem; color: var(--tinta); padding-block: .5rem; }
+  nav a:hover { color: var(--hoja); text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px; text-decoration-color: var(--mango); }
+  .top .btn { padding: .8rem 1.2rem; min-height: 46px; font-size: .95rem; }
+  @media (max-width: 960px) { nav { display: none; } }
+  @media (max-width: 420px) { .top .btn span.largo { display: none; } }
+
+  /* Hero a todo el ancho */
+  .hero {
+    position: relative; isolation: isolate; overflow: hidden;
+    min-height: min(88vh, 780px); display: flex; align-items: center;
+    padding-block: clamp(3.5rem, 9vw, 6.5rem);
+    background: linear-gradient(160deg, var(--hoja) 0%, #2F6B52 100%); /* se ve si nutri.jpg aún no existe */
+    color: #fff;
+  }
+  .hero-foto { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; z-index: -2; }
+  .hero::after {
+    content: ""; position: absolute; inset: 0; z-index: -1;
+    background: linear-gradient(90deg, rgba(18,48,31,.9) 0%, rgba(18,48,31,.72) 38%, rgba(18,48,31,.18) 72%, rgba(18,48,31,0) 100%);
+  }
+  .hero .contenido { max-width: 640px; }
+  .hero h1 { color: #fff; }
+  .hero p.lead { font-size: 1.2rem; color: #E3EEE6; margin-bottom: 1.75rem; }
+  .acciones { display: flex; flex-wrap: wrap; gap: .85rem; }
+  .hero .btn-borde { border-color: #fff; color: #fff; }
+  .hero .btn-borde:hover { background: #fff; color: var(--hoja-oscura); }
+  .hero .nota { margin-top: 1.5rem; font-size: .95rem; color: #E3EEE6; display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; }
+  .hero .nota span::before { content: ""; display: inline-block; width: .5rem; height: .5rem; border-radius: 50%; background: var(--mango); margin-right: .5rem; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .hero h1, .hero p.lead, .hero .acciones, .hero .nota { animation: entra .8s cubic-bezier(.2,.7,.2,1) both; }
+    .hero p.lead { animation-delay: .08s; }
+    .hero .acciones { animation-delay: .16s; }
+    .hero .nota { animation-delay: .22s; }
+    @keyframes entra { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+  }
+  @media (max-width: 760px) {
+    .hero { min-height: 640px; align-items: flex-end; }
+    .hero::after { background: linear-gradient(180deg, rgba(18,48,31,.35) 0%, rgba(18,48,31,.82) 55%, rgba(18,48,31,.92) 100%); }
+  }
+
+  /* Servicios: lista con filas, no tarjetas */
+  .servicios { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; column-gap: 3rem; }
+  .servicios li { padding: 1.25rem 0; border-top: 1px solid var(--linea); display: grid; grid-template-columns: 44px 1fr; gap: 1rem; }
+  .servicios svg { width: 32px; height: 32px; stroke: var(--hoja); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; margin-top: .15rem; }
+  .servicios h3 { margin-bottom: .25rem; }
+  .servicios p { margin: 0; color: var(--tinta-suave); font-size: 1rem; }
+  @media (max-width: 760px) { .servicios { grid-template-columns: 1fr; } }
+
+  /* Sobre mí */
+  .sobre { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: start; }
+  .sobre .frase {
+    font-family: "Bricolage Grotesque", sans-serif; font-weight: 700;
+    font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.2; letter-spacing: -0.02em; color: var(--hoja);
+    border-left: 6px solid var(--mango); padding-left: 1.25rem; margin: 0;
+  }
+  .valores { list-style: none; padding: 0; margin: 1.75rem 0 0; display: grid; gap: .9rem; }
+  .valores li { display: grid; grid-template-columns: 24px 1fr; gap: .75rem; }
+  .valores svg { width: 22px; height: 22px; stroke: var(--hoja); fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; margin-top: .2rem; }
+  @media (max-width: 800px) { .sobre { grid-template-columns: 1fr; } }
+
+  /* Camino: sí es una secuencia, por eso va numerado */
+  .camino { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; counter-reset: paso; position: relative; }
+  .camino::before { content: ""; position: absolute; top: 24px; left: 5%; right: 5%; height: 3px; background: var(--hoja); opacity: .25; }
+  .camino li { counter-increment: paso; position: relative; padding-top: 4rem; }
+  .camino li::before {
+    content: counter(paso); position: absolute; top: 0; left: 0;
+    width: 50px; height: 50px; border-radius: 50%;
+    background: var(--hoja); color: #fff; display: grid; place-items: center;
+    font: 800 1.2rem "Bricolage Grotesque", sans-serif;
+  }
+  .camino li:last-child::before { background: var(--mango); color: var(--hoja-oscura); }
+  .camino h3 { font-size: 1.1rem; margin-bottom: .3rem; }
+  .camino p { font-size: .97rem; color: var(--tinta-suave); margin: 0; }
+  @media (max-width: 860px) {
+    .camino { grid-template-columns: 1fr; gap: 0; }
+    .camino::before { top: 25px; bottom: 25px; left: 24px; right: auto; width: 3px; height: auto; }
+    .camino li { padding: 0 0 1.75rem 4.25rem; min-height: 50px; }
+  }
+
+  /* Planes */
+  .planes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; align-items: stretch; }
+  .plan { border: 1.5px solid var(--hoja); border-radius: 22px; padding: 2rem 1.75rem; display: flex; flex-direction: column; background: #fff; }
+  .plan.destacado { background: var(--hoja); color: #fff; border-color: var(--hoja); }
+  .plan.destacado h3, .plan.destacado .costo { color: #fff; }
+  .plan .costo { font-weight: 600; color: var(--hoja); margin-bottom: 1rem; }
+  .plan ul { list-style: none; padding: 0; margin: 0 0 1.75rem; display: grid; gap: .6rem; flex: 1; }
+  .plan li { display: grid; grid-template-columns: 22px 1fr; gap: .6rem; font-size: 1rem; }
+  .plan li svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; margin-top: .22rem; }
+  .plan .btn { width: 100%; }
+  .plan.destacado .btn-borde { border-color: #fff; color: #fff; }
+  .plan.destacado .btn-borde:hover { background: #fff; color: var(--hoja); }
+  @media (max-width: 900px) { .planes { grid-template-columns: 1fr; } }
+
+  /* Consejos */
+  .consejos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  .consejos article { border-top: 4px solid var(--mango); padding-top: 1.1rem; }
+  .consejos p { color: var(--tinta-suave); margin: 0; }
+  @media (max-width: 860px) { .consejos { grid-template-columns: 1fr; gap: 1.75rem; } }
+
+  /* FAQ */
+  .faq { max-width: 780px; }
+  details { border-top: 1px solid var(--linea); }
+  details:last-of-type { border-bottom: 1px solid var(--linea); }
+  summary {
+    cursor: pointer; list-style: none; padding: 1.2rem 2.5rem 1.2rem 0; position: relative;
+    font: 700 1.12rem/1.3 "Bricolage Grotesque", sans-serif; color: var(--hoja-oscura);
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+"; position: absolute; right: .25rem; top: 50%; transform: translateY(-50%);
+    font: 500 1.8rem/1 "Figtree", sans-serif; color: var(--hoja); transition: transform .2s ease;
+  }
+  details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+  details p { color: var(--tinta-suave); padding-bottom: 1.25rem; margin: 0; }
+
+  /* Agenda */
+  .agenda { background: var(--hoja); color: #fff; }
+  .agenda h2 { color: #fff; }
+  .agenda .grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: start; }
+  .agenda .grid > div > p { color: #D5E4D9; }
+  .agenda .pasos { list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; gap: .6rem; color: #fff; }
+  .agenda .pasos li { display: grid; grid-template-columns: 24px 1fr; gap: .7rem; }
+  .agenda .pasos svg { width: 22px; height: 22px; stroke: var(--mango); fill: none; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; margin-top: .2rem; }
+  form.cita { background: #fff; color: var(--tinta); border-radius: 22px; padding: clamp(1.4rem, 3vw, 2.2rem); display: grid; gap: 1.1rem; }
+  .campo { display: grid; gap: .4rem; }
+  .campo label, .campo legend { font-weight: 600; font-size: .98rem; color: var(--hoja-oscura); padding: 0; }
+  fieldset.campo { border: 0; margin: 0; padding: 0; min-width: 0; }
+  input[type="text"], select {
+    font: inherit; width: 100%; padding: .85rem 1rem; min-height: 50px;
+    border: 1.5px solid #9DB3A5; border-radius: 12px; background: #fff; color: var(--tinta);
+  }
+  input[type="text"]:focus, select:focus { outline: 3px solid var(--mango); outline-offset: 1px; border-color: var(--hoja); }
+  .fila { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .opciones { display: flex; flex-wrap: wrap; gap: .6rem; }
+  .opciones label { position: relative; font-weight: 500; color: var(--tinta); }
+  .opciones input { position: absolute; opacity: 0; inset: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; }
+  .opciones span { display: inline-block; padding: .65rem 1.1rem; border: 1.5px solid #9DB3A5; border-radius: 999px; }
+  .opciones input:checked + span { background: var(--hoja); color: #fff; border-color: var(--hoja); }
+  .opciones input:focus-visible + span { outline: 3px solid var(--mango); outline-offset: 2px; }
+  .cita .btn { width: 100%; }
+  .cita .aviso { font-size: .9rem; color: var(--tinta-suave); margin: 0; }
+  @media (max-width: 860px) { .agenda .grid { grid-template-columns: 1fr; } .fila { grid-template-columns: 1fr; } }
+
+  /* Contacto */
+  .contacto { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .contacto div { border-top: 1px solid var(--linea); padding-top: 1rem; }
+  .contacto h3 { font-size: 1.1rem; }
+  .contacto p { margin: 0 0 .5rem; color: var(--tinta-suave); }
+  .contacto a.enlace { font-weight: 600; color: var(--hoja); text-underline-offset: 4px; }
+  @media (max-width: 760px) { .contacto { grid-template-columns: 1fr; } }
+
+  footer { background: var(--hoja-oscura); color: #BFD2C5; padding-block: 2rem; font-size: .95rem; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem 2rem; }
+  footer p { margin: 0; max-width: none; }
+
+  /* WhatsApp flotante */
+  .wa-flotante {
+    position: fixed; z-index: 60;
+    right: max(1rem, env(safe-area-inset-right, 0px));
+    bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+    width: 60px; height: 60px; border-radius: 50%;
+    background: #25D366; color: #fff; display: grid; place-items: center;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, .28);
+  }
+  .wa-flotante svg { width: 32px; height: 32px; }
+  .wa-flotante:hover { background: #1FB958; }
+</style>
+</head>
+
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<!-- SVG reutilizables -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ico-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24s8.24 3.7 8.24 8.24-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></symbol>
+  <symbol id="ico-ok" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="marca" href="#inicio">Neyra Espinoza<small>Nutrióloga</small></a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#preguntas">Preguntas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-mango" href="https://wa.me/524631023846?text=Hola%20Neyra%2C%20quiero%20agendar%20mi%20primera%20consulta." target="_blank" rel="noopener">
+      <svg><use href="#ico-wa"/></svg><span>Agendar<span class="largo"> consulta</span></span>
+    </a>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- INICIO -->
+  <section class="hero" id="inicio">
+    <img class="hero-foto" src="nutri.jpg" alt="Nutrióloga Neyra Espinoza" fetchpriority="high" onerror="this.remove()">
+    <div class="wrap">
+      <div class="contenido">
+        <h1>Nutrición personalizada para que te sientas mejor y alcances tus objetivos.</h1>
+        <p class="lead">Soy Neyra Espinoza, nutrióloga. Te acompaño con un plan hecho a tu medida, a tu rutina y a la comida que sí disfrutas, sin dietas de moda ni promesas exageradas.</p>
+        <div class="acciones">
+          <a class="btn btn-mango" href="https://wa.me/524631023846?text=Hola%20Neyra%2C%20quiero%20agendar%20mi%20primera%20consulta." target="_blank" rel="noopener"><svg><use href="#ico-wa"/></svg>Agenda tu primera consulta</a>
+          <a class="btn btn-borde" href="#servicios">Ver servicios</a>
+        </div>
+        <div class="nota">
+          <span>Consulta presencial y en línea</span>
+          <span>Respuesta por WhatsApp</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="seccion menta" id="servicios">
+    <div class="wrap">
+      <div class="intro">
+        <h2>Servicios de nutrición</h2>
+        <p>Cada consulta parte de ti: tu historial, tus horarios, tus gustos y tu meta. Elige el servicio que mejor se acomode a lo que necesitas.</p>
+      </div>
+      <ul class="servicios">
+        <li>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12"/><path d="M16 9v7l4 3"/></svg>
+          <div><h3>Consulta nutricional inicial</h3><p>Conocemos tu historial, hábitos y objetivos para definir por dónde empezar.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 22l7-7 5 5 10-11"/><path d="M21 9h6v6"/></svg>
+          <div><h3>Consulta de seguimiento</h3><p>Revisamos tu avance y ajustamos el plan para que siga funcionando.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="5" width="18" height="22" rx="3"/><path d="M11 12h10M11 17h10M11 22h6"/></svg>
+          <div><h3>Plan nutricional personalizado</h3><p>Un plan de alimentación claro, práctico y adaptado a tu día a día.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 12h20M9 12l-2 13h18l-2-13"/><path d="M12 12a4 4 0 0 1 8 0"/></svg>
+          <div><h3>Control de peso</h3><p>Cambios graduales y sostenibles, sin dietas extremas.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 16h4M24 16h4M8 11v10M24 11v10M12 8v16M20 8v16M12 16h8"/></svg>
+          <div><h3>Nutrición deportiva</h3><p>Alimentación para entrenar, rendir y recuperarte mejor.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 27C8 21 5 16 5 12a6 6 0 0 1 11-3 6 6 0 0 1 11 3c0 4-3 9-11 15z"/></svg>
+          <div><h3>Nutrición para diabetes</h3><p>Orientación para llevar una alimentación equilibrada junto con tu médico.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="12" r="6"/><path d="M6 27c1-6 5-9 10-9s9 3 10 9"/></svg>
+          <div><h3>Nutrición infantil</h3><p>Hábitos saludables desde pequeños, con apoyo para toda la familia.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4c-5 0-8 4-8 9 0 6 4 9 8 15 4-6 8-9 8-15 0-5-3-9-8-9z"/><circle cx="16" cy="13" r="3"/></svg>
+          <div><h3>Nutrición en el embarazo</h3><p>Alimentación adecuada para ti y para tu bebé en cada etapa.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 8h22v14H5zM12 27h8M16 22v5"/></svg>
+          <div><h3>Consultas en línea</h3><p>Atención por videollamada, desde donde estés.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 9c4-2 8-2 11 1 3-3 7-3 11-1v15c-4-2-8-2-11 1-3-3-7-3-11-1z"/><path d="M16 10v15"/></svg>
+          <div><h3>Educación nutricional</h3><p>Aprendes a leer etiquetas, armar tus comidas y decidir con seguridad.</p></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section class="seccion" id="sobre-mi">
+    <div class="wrap sobre">
+      <p class="frase">Comer bien no debería sentirse como un castigo.</p>
+      <div>
+        <h2>Sobre mí</h2>
+        <p>Soy Neyra Espinoza, nutrióloga. Mi trabajo es ayudarte a entender qué necesita tu cuerpo y a convertirlo en un plan que sí puedas seguir, con tu presupuesto, tu familia y tu horario.</p>
+        <p>Creo en la constancia más que en la perfección: pequeños cambios que se mantienen valen más que una dieta estricta que dura dos semanas.</p>
+        <ul class="valores">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-ok"/></svg><span><strong>Atención individual.</strong> No hay dos personas iguales, ni dos planes iguales.</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-ok"/></svg><span><strong>Sin juicios ni prohibiciones.</strong> Trabajamos con la comida real de tu vida.</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-ok"/></svg><span><strong>Seguimiento cercano.</strong> Resuelves dudas y ajustamos el plan contigo.</span></li>
+        </ul>
+        <!-- COMPLETAR: formación académica, cédula profesional, certificaciones y años de experiencia de Neyra.
+             Esta información genera mucha confianza en un sitio de salud. -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section class="seccion menta" id="como-funciona">
+    <div class="wrap">
+      <div class="intro">
+        <h2>Tu camino hacia una alimentación saludable</h2>
+        <p>Un proceso sencillo, de la primera conversación al progreso que puedes ver y sentir.</p>
+      </div>
+      <ol class="camino">
+        <li><h3>Conoce tu situación</h3><p>Escribes por WhatsApp y agendamos tu cita. En consulta hablamos de tu historial y hábitos.</p></li>
+        <li><h3>Define tus objetivos</h3><p>Decidimos juntas qué quieres lograr y en qué tiempo es realista.</p></li>
+        <li><h3>Recibe tu plan personalizado</h3><p>Te entrego un plan claro, adaptado a tu rutina y a tus gustos.</p></li>
+        <li><h3>Seguimiento</h3><p>Revisamos cómo te va, resolvemos dudas y ajustamos lo necesario.</p></li>
+        <li><h3>Progreso</h3><p>Consolidas hábitos que puedes mantener a largo plazo.</p></li>
+      </ol>
+      <p style="margin-top:2.5rem"><a class="btn btn-hoja" href="https://wa.me/524631023846?text=Hola%20Neyra%2C%20quiero%20agendar%20mi%20primera%20consulta." target="_blank" rel="noopener"><svg><use href="#ico-wa"/></svg>Agenda tu primera consulta</a></p>
+    </div>
+  </section>
+
+  <!-- PLANES -->
+  <section class="seccion" id="planes">
+    <div class="wrap">
+      <div class="intro">
+        <h2>Planes de consulta</h2>
+        <p>Elige la modalidad que mejor se acomode a ti. Escríbeme por WhatsApp y te comparto los costos y la disponibilidad.</p>
+      </div>
+      <div class="planes">
+        <article class="plan">
+          <h3>Consulta individual</h3>
+          <p class="costo">Pregunta por el costo</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-ok"/></svg>Valoración de tu historial y objetivos</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-ok"/></svg>Plan de alimentación personalizado</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-ok"/></svg>Recomendaciones para empezar</li>
+          </ul>
+          <a class="btn btn-borde" href="https://wa.me/524631023846?text=Hola%20Neyra%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20consulta%20individual." target="_blank" rel="noopener">Preguntar por WhatsApp</a>
+        </article>
+
+        <article class="plan destacado">
+          <h3>Paquete de seguimiento</h3>
+          <p class="costo">Pregunta por el costo</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-ok"/></svg>Consulta inicial y consultas de seguimiento</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-ok"/></svg>Ajustes a tu plan conforme avanzas</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-ok"/></svg>Apoyo para resolver dudas</li>
+          </ul>
+          <a class="btn btn-mango" href="https://wa.me/524631023846?text=Hola%20Neyra%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20paquete%20de%20seguimiento." target="_blank" rel="noopener">Preguntar por WhatsApp</a>
+        </article>
+
+        <article class="plan">
+          <h3>Consulta en línea</h3>
+          <p class="costo">Pregunta por el costo</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-ok"/></svg>Videollamada desde donde estés</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-ok"/></svg>Mismo plan personalizado</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-ok"/></svg>Seguimiento por mensajes</li>
+          </ul>
+          <a class="btn btn-borde" href="https://wa.me/524631023846?text=Hola%20Neyra%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20consulta%20en%20l%C3%ADnea." target="_blank" rel="noopener">Preguntar por WhatsApp</a>
+        </article>
+      </div>
+      <!-- COMPLETAR: precios reales y qué incluye cada plan. -->
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS: activar cuando haya testimonios reales con autorización del paciente
+  <section class="seccion menta" id="testimonios">
+    <div class="wrap">
+      <h2>Lo que dicen mis pacientes</h2>
+      ...
+    </div>
+  </section>
+  -->
+
+  <!-- CONSEJOS -->
+  <section class="seccion menta" id="consejos">
+    <div class="wrap">
+      <div class="intro">
+        <h2>Consejos para empezar hoy</h2>
+        <p>Ideas sencillas que puedes aplicar mientras agendas tu consulta.</p>
+      </div>
+      <div class="consejos">
+        <article>
+          <h3>Empieza por lo que ya comes</h3>
+          <p>No hace falta cambiarlo todo. Elige un hábito, como tomar más agua o sumar verdura a la comida, y hazlo constante.</p>
+        </article>
+        <article>
+          <h3>Incluye proteína en tus comidas</h3>
+          <p>La cantidad ideal depende de tu edad, actividad y salud, por eso se calcula en consulta y no con una cifra general.</p>
+        </article>
+        <article>
+          <h3>Planea tu semana</h3>
+          <p>Tener ingredientes base listos te ayuda a comer mejor aun en días de mucha prisa.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREGUNTAS FRECUENTES -->
+  <section class="seccion" id="preguntas">
+    <div class="wrap">
+      <div class="intro"><h2>Preguntas frecuentes</h2></div>
+      <div class="faq">
+        <details>
+          <summary>¿La consulta es presencial o en línea?</summary>
+          <p>Puedes elegir. Al agendar por WhatsApp te confirmo la modalidad y los horarios disponibles.</p>
+        </details>
+        <details>
+          <summary>¿Cuánto dura la consulta?</summary>
+          <p>Te confirmo la duración al agendar tu cita, según el tipo de consulta que necesites.</p>
+        </details>
+        <details>
+          <summary>¿Necesito llevar estudios de laboratorio?</summary>
+          <p>Si tienes estudios recientes, es útil que los compartas. Si no los tienes, también podemos empezar y te digo si hace falta alguno.</p>
+        </details>
+        <details>
+          <summary>¿Me entregan un plan de alimentación?</summary>
+          <p>Sí. Recibes un plan personalizado, pensado para tus objetivos, tu rutina y tus gustos.</p>
+        </details>
+        <details>
+          <summary>¿Cuánto cuesta?</summary>
+          <p>Escríbeme por WhatsApp y te comparto los costos de cada consulta y paquete.</p>
+        </details>
+        <details>
+          <summary>¿Qué pasa si necesito cambiar mi cita?</summary>
+          <p>Avísame por WhatsApp con anticipación y buscamos juntas un nuevo horario.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGENDAR CITA -->
+  <section class="seccion agenda" id="agenda">
+    <div class="wrap grid">
+      <div>
+        <h2>Agenda tu consulta</h2>
+        <p>Llena estos datos y se abrirá WhatsApp con tu mensaje listo para enviar. Yo te confirmo el horario.</p>
+        <ul class="pasos">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-ok"/></svg>Elige tu servicio</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-ok"/></svg>Dinos tu día y horario preferido</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-ok"/></svg>Envía el mensaje y confirmamos tu cita</li>
+        </ul>
+      </div>
+
+      <form class="cita" id="form-cita" novalidate>
+        <div class="campo">
+          <label for="nombre">Tu nombre</label>
+          <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+        </div>
+        <div class="campo">
+          <label for="servicio">Servicio</label>
+          <select id="servicio" name="servicio">
+            <option>Consulta nutricional inicial</option>
+            <option>Consulta de seguimiento</option>
+            <option>Plan nutricional personalizado</option>
+            <option>Control de peso</option>
+            <option>Nutrición deportiva</option>
+            <option>Nutrición para diabetes</option>
+            <option>Nutrición infantil</option>
+            <option>Nutrición en el embarazo</option>
+            <option>Educación nutricional</option>
+          </select>
+        </div>
+        <fieldset class="campo">
+          <legend>Modalidad</legend>
+          <div class="opciones">
+            <label><input type="radio" name="modalidad" value="presencial" checked><span>Presencial</span></label>
+            <label><input type="radio" name="modalidad" value="en línea"><span>En línea</span></label>
+          </div>
+        </fieldset>
+        <div class="fila">
+          <div class="campo">
+            <label for="dia">Día preferido</label>
+            <select id="dia" name="dia">
+              <option>Cualquier día</option>
+              <option>Lunes</option><option>Martes</option><option>Miércoles</option>
+              <option>Jueves</option><option>Viernes</option><option>Sábado</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="horario">Horario</label>
+            <select id="horario" name="horario">
+              <option>Cualquier horario</option>
+              <option>Mañana</option>
+              <option>Tarde</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn-mango" type="submit"><svg><use href="#ico-wa"/></svg>Enviar por WhatsApp</button>
+        <p class="aviso" id="aviso" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="seccion" id="contacto">
+    <div class="wrap">
+      <div class="intro"><h2>Contacto</h2></div>
+      <div class="contacto">
+        <div>
+          <h3>WhatsApp</h3>
+          <p>La forma más rápida de agendar o resolver dudas.</p>
+          <a class="enlace" href="https://wa.me/524631023846?text=Hola%20Neyra%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n." target="_blank" rel="noopener">+52 463 102 3846</a>
+        </div>
+        <div>
+          <h3>Teléfono</h3>
+          <p>Llámame en horario de atención.</p>
+          <a class="enlace" href="tel:+524631023846">+52 463 102 3846</a>
+        </div>
+        <div>
+          <h3>Consulta en línea</h3>
+          <p>Disponible por videollamada. Agenda por WhatsApp y te envío el enlace.</p>
+          <a class="enlace" href="#agenda">Agendar mi cita</a>
+        </div>
+        <!-- COMPLETAR: dirección, Google Maps, horarios, email y redes sociales. -->
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© <span id="anio"></span> Nutrióloga Neyra Espinoza</p>
+    <p>La información de este sitio es orientativa y no sustituye la valoración de un profesional de la salud.</p>
+  </div>
+</footer>
+
+<a class="wa-flotante" href="https://wa.me/524631023846?text=Hola%20Neyra%2C%20quiero%20agendar%20mi%20primera%20consulta." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg aria-hidden="true"><use href="#ico-wa"/></svg>
+</a>
+
+<script>
+  document.getElementById('anio').textContent = new Date().getFullYear();
+
+  document.getElementById('form-cita').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = e.target;
+    var nombre = f.nombre.value.trim();
+    var aviso = document.getElementById('aviso');
+    if (!nombre) {
+      aviso.textContent = 'Escribe tu nombre para continuar.';
+      f.nombre.focus();
+      return;
+    }
+    aviso.textContent = '';
+    var modalidad = f.modalidad.value;
+    var msg = 'Hola Neyra, soy ' + nombre + '. Quiero agendar: ' + f.servicio.value +
+      ' (' + modalidad + '). Día preferido: ' + f.dia.value +
+      '. Horario: ' + f.horario.value + '.';
+    window.open('https://wa.me/524631023846?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+  });
+</script>
+</body>
+</html>
